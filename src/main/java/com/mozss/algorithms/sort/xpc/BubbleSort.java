@@ -1,14 +1,12 @@
 package com.mozss.algorithms.sort.xpc;
 
 public class BubbleSort {
-
     /*
      * 冒泡算法的运行规律：
      * 1.比较相邻的两个元素，较大者置于后者；
      * 2.对每一轮的相邻元素进行同样的工作，直到最后一对。这一轮结束之后，待排序序列的最大元素为最后一个元素。
      * 3.此时待排序序列长度n-1;重复1,2操作。（也就是需要比较n-1轮）
      * */
-
     public static int[] sort(int[] array) {
         //这里的for循环表示总共需要多少轮
         for (int i = 1; i < array.length; i++) {
@@ -26,7 +24,6 @@ public class BubbleSort {
             if (flag) {
                 break;
             }
-
             //第 i轮排序的结果为
             System.out.print("第" + i + "轮排序后的结果为:");
             display(array);
@@ -42,7 +39,6 @@ public class BubbleSort {
         sort(array);
         display(array);
     }
-
     //遍历显示数组
     public static void display(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -50,5 +46,4 @@ public class BubbleSort {
         }
         System.out.println();
     }
-
 }

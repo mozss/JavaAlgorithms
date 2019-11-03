@@ -1,5 +1,19 @@
-package com.mozss.algorithms.sort.xpc;
-
+- 插入排序：每次将待排序元素插入已排好序的有序序列中。
+### 概要
+##### 性质
+- 稳定
+- 时间：O(n<sup>2</sup>)
+- 空间：O(1)
+##### 算法思想
+每次将待排序的第一个元素插入到已排好的有序序列中。
+### 解读
+##### 简要思路
+常见的插入算法有哪些？ 直接插入，二分插入，链表插入，希尔排序
+##### 算法图解
+![KjPg9P.png](https://s2.ax1x.com/2019/11/03/KjPg9P.png)
+### 实现
+##### 实现方式1：数组
+```java
 public class InsertSort {
     /*
      * 算法思想：
@@ -25,23 +39,18 @@ public class InsertSort {
         }
         return array;
     }
-
-    public static void main(String[] args) {
-        int[] array = {4, 2, 8, 9, 5, 7, 6, 1, 3};
-        //未排序数组顺序为
-        System.out.println("未排序数组顺序为：");
-        display(array);
-        System.out.println("-----------------------");
-        array = sort(array);
-        System.out.println("-----------------------");
-        System.out.println("经过插入排序后的数组顺序为：");
-        display(array);
-    }
-    //遍历显示数组
-    public static void display(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
-    }
 }
+```
+##### 实现方式2：链表
+
+### 性能分析
+
+##### 时间复杂度
+##### 空间复杂度
+##### 适用场景
+
+### 算法应用例子
+- 源码地址：
+##### 例子1：
+##### 例子2：
+##### 例子3：

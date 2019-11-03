@@ -50,7 +50,7 @@ public class No_500 {
             }
 
         }
-        return (String[]) result.toArray(new String[result.size()]);
+        return result.toArray(new String[result.size()]);
     }
 
 
