@@ -1,44 +1,51 @@
 package com.mozss.algorithms.sort.tjj;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class BucketSort {
-    /*
-     * 桶排序
-     * 参数说明：
-     *     a -- 待排序数组
-     *     max -- 数组a中最大值的范围
-     */
-    public static void bucketSort(int[] a, int max) {
-        int[] buckets;
-        if (a==null || max<1)
-            return ;
-        // 创建一个容量为max的数组buckets，并且将buckets中的所有数据都初始化为0。
-        buckets = new int[max];
-        // 1. 计数
-        for(int i = 0; i < a.length; i++)
-            buckets[a[i]]++;
-        // 2. 排序
-        for (int i = 0, j = 0; i < max; i++) {
-            while( (buckets[i]--) >0 ) {
-                a[j++] = i;
+    private static int[] bucketSort(int[] arr){
+
+        // 计算最大值与最小值
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int i = 0; i < arr.length; i++){
+            max = Math.max(max, arr[i]);
+            min = Math.min(min, arr[i]);
+        }
+
+        // 计算桶的数量
+        int bucketNum = (max - min) / arr.length + 1;
+        ArrayList<ArrayList<Integer>> bucketArr = new ArrayList<>(bucketNum);
+        for(int i = 0; i < bucketNum; i++){
+            bucketArr.add(new ArrayList<Integer>());
+        }
+
+        // 将每个元素放入桶
+        for(int i = 0; i < arr.length; i++){
+            int num = (arr[i] - min) / (arr.length);
+            bucketArr.get(num).add(arr[i]);
+        }
+        // 对每个桶进行排序
+        for(int i = 0; i < bucketArr.size(); i++){
+            Collections.sort(bucketArr.get(i));
+        }
+        // 将桶中的元素赋值到原序列
+        int index = 0;
+        for(int i = 0; i < bucketArr.size(); i++){
+            for(int j = 0; j < bucketArr.get(i).size(); j++){
+                arr[index++] = bucketArr.get(i).get(j);
             }
         }
-        buckets = null;
+        return arr;
     }
 
     public static void main(String[] args) {
-        int i;
-        int a[] = {8,2,3,4,3,6,6,3,9};
-        System.out.println("======排序之前======");
-        for (i=0; i<a.length; i++)
-            System.out.printf("%d ", a[i]);
-        System.out.printf("\n");
+        int a[] = {100, 23, 256, 987, 954, 45, 123, 356, 378,};
+        a = BucketSort.bucketSort(a);
+        for (int i = 0; i <a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
 
-        //排序算法处理
-        bucketSort(a, 10);
-
-        System.out.println("======排序之后======");
-        for (i=0; i<a.length; i++)
-            System.out.printf("%d ", a[i]);
-        System.out.printf("\n");
     }
 }
