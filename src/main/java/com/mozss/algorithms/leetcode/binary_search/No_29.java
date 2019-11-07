@@ -17,7 +17,6 @@ package com.mozss.algorithms.leetcode.binary_search;
 * 输出: -2
 *
 * 说明:
-
 被除数和除数均为 32 位有符号整数。
 除数不为 0。
 假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。
