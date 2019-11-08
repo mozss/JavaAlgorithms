@@ -52,4 +52,48 @@ public class FibonacciSequenen {
         }
         return -1;
     }
+
+    /**
+     * @param n
+     * @return
+     * @description 非递归解法：有去无回
+     * @author rico
+     * @created 2017年5月10日 下午12:03:04
+     */
+    public static int fibonacci_loop(int n) {
+
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        int result = -1;
+        int first = 1;      // 自己维护的"栈",以便状态回溯
+        int second = 1;     // 自己维护的"栈",以便状态回溯
+
+        for (int i = 3; i <= n; i++) { // 循环
+            result = first + second;
+            first = second;
+            second = result;
+        }
+        return result;
+    }
+
+    /**
+     * @param n
+     * @return
+     * @description 使用数组存储斐波那契数列
+     * @author rico
+     */
+    public static int fibonacci_array(int n) {
+        if (n > 0) {
+            int[] arr = new int[n];   // 使用临时数组存储斐波纳契数列
+            arr[0] = arr[1] = 1;
+
+            for (int i = 2; i < n; i++) {   // 为临时数组赋值
+                arr[i] = arr[i - 1] + arr[i - 2];
+            }
+            return arr[n - 1];
+        }
+        return -1;
+    }
+
 }
