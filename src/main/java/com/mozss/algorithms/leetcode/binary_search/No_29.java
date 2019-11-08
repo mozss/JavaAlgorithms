@@ -45,5 +45,4 @@ public class No_29 {
         return negative ? -result : result; //符号相异取反
     }
 
-
 }

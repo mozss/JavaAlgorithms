@@ -31,8 +31,8 @@ package com.mozss.algorithms.leetcode.hashmap;
  * 不要使用内建的哈希库
  * */
 public class No_706 {
-    private Integer[] backArr;
     private static final int DEFAULT_VOLUME = 100000;
+    private Integer[] backArr;
 
     //构造函数
     public No_706() {

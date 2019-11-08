@@ -37,6 +37,7 @@ public class InsertSort {
         System.out.println("经过插入排序后的数组顺序为：");
         display(array);
     }
+
     //遍历显示数组
     public static void display(int[] array) {
         for (int i = 0; i < array.length; i++) {

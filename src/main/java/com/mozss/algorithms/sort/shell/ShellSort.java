@@ -1,31 +1,33 @@
 package com.mozss.algorithms.sort.shell;
+
 import java.util.Arrays;
+
 public class ShellSort {
     //knuth间隔序列的希尔排序
     //希尔排序 knuth 间隔序列 3h+1
-    public static void shellKnuthSort(int[] array){
-        System.out.println("原数组为"+Arrays.toString(array));
-        int step = 1 ;
+    public static void shellKnuthSort(int[] array) {
+        System.out.println("原数组为" + Arrays.toString(array));
+        int step = 1;
         int len = array.length;
-        while(step <= len/3){
-            step = step*3 + 1;//1,4,13,40......
+        while (step <= len / 3) {
+            step = step * 3 + 1;//1,4,13,40......
         }
-        while(step > 0){
+        while (step > 0) {
             //分别对每个增量间隔进行排序
-            for(int i = step ; i < len ; i++){
+            for (int i = step; i < len; i++) {
                 int temp = array[i];
                 int j = i;
-                while(j > step-1 && temp <= array[j-step]){
-                    array[j] = array[j-step];
+                while (j > step - 1 && temp <= array[j - step]) {
+                    array[j] = array[j - step];
                     j -= step;
                 }
                 array[j] = temp;
             }//end for
-            System.out.println("间隔为"+step+"的排序结果为"+Arrays.toString(array));
-            step = (step-1)/3;
+            System.out.println("间隔为" + step + "的排序结果为" + Arrays.toString(array));
+            step = (step - 1) / 3;
         }//end while(step>0)
 
-        System.out.println("最终排序："+Arrays.toString(array));
+        System.out.println("最终排序：" + Arrays.toString(array));
     }
 
     //希尔排序 间隔序列2h

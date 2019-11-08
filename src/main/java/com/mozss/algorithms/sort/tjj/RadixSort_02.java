@@ -44,7 +44,7 @@ public class RadixSort_02 {
 
         // 将数据出现的次数存储在buckets[]中
         for (int i = 0; i < a.length; i++)
-            buckets[ (a[i]/exp)%10 ]++;
+            buckets[(a[i] / exp) % 10]++;
 
         // 更改buckets[i]。目的是让更改后的buckets[i]的值，是该数据在output[]中的位置。
         for (int i = 1; i < 10; i++)
@@ -52,8 +52,8 @@ public class RadixSort_02 {
 
         // 将数据存储到临时数组output[]中
         for (int i = a.length - 1; i >= 0; i--) {
-            output[buckets[ (a[i]/exp)%10 ] - 1] = a[i];
-            buckets[ (a[i]/exp)%10 ]--;
+            output[buckets[(a[i] / exp) % 10] - 1] = a[i];
+            buckets[(a[i] / exp) % 10]--;
         }
 
         // 将排序好的数据赋值给a[]
@@ -75,7 +75,7 @@ public class RadixSort_02 {
         int max = getMax(a);    // 数组a中的最大值
 
         // 从个位开始，对数组a按"指数"进行排序
-        for (exp = 1; max/exp > 0; exp *= 10)
+        for (exp = 1; max / exp > 0; exp *= 10)
             countSort(a, exp);
     }
 
@@ -84,14 +84,14 @@ public class RadixSort_02 {
         int a[] = {53, 3, 542, 748, 14, 214, 154, 63, 616};
 
         System.out.printf("before sort:");
-        for (i=0; i<a.length; i++)
+        for (i = 0; i < a.length; i++)
             System.out.printf("%d ", a[i]);
         System.out.printf("\n");
 
         radixSort(a);    // 基数排序
 
         System.out.printf("after  sort:");
-        for (i=0; i<a.length; i++)
+        for (i = 0; i < a.length; i++)
             System.out.printf("%d ", a[i]);
         System.out.printf("\n");
     }

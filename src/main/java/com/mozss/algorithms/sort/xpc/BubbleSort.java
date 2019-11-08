@@ -39,6 +39,7 @@ public class BubbleSort {
         sort(array);
         display(array);
     }
+
     //遍历显示数组
     public static void display(int[] array) {
         for (int i = 0; i < array.length; i++) {
