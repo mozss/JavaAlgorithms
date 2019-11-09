@@ -51,4 +51,9 @@ public class ShellSort {
             System.out.println("间隔为" + step + "的排序结果为" + Arrays.toString(array));
         }
     }
+
+    public static void main(String[] args) {
+        int[] array = {4,2,8,9,5,7,6,1,3,10};
+        shellKnuthSort(array);
+    }
 }

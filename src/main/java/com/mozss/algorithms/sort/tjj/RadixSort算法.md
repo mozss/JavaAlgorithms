@@ -14,6 +14,8 @@
 ### 解读
 ##### 简要思路
 ![KjYTa9.png](https://s2.ax1x.com/2019/11/03/KjYTa9.png)
+
+![MmLeiV.png](https://s2.ax1x.com/2019/11/09/MmLeiV.png)
 ##### 算法图解
 - 按照个位数进行排序。
 - 按照十位数进行排序。
