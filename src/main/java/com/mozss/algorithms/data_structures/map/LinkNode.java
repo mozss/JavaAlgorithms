@@ -6,8 +6,8 @@ package com.mozss.algorithms.data_structures.map;
  */
 
 class LinkNode {
-    private int iData;
     public LinkNode next;
+    private int iData;
 
     public LinkNode(int iData) {
         this.iData = iData;

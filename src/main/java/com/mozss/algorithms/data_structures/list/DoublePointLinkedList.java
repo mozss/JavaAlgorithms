@@ -12,15 +12,6 @@ public class DoublePointLinkedList {
     private Node tail;//尾节点
     private int size;//节点的个数
 
-    private class Node {
-        private Object data;
-        private Node next;
-
-        public Node(Object data) {
-            this.data = data;
-        }
-    }
-
     public DoublePointLinkedList() {
         size = 0;
         head = null;
@@ -103,6 +94,15 @@ public class DoublePointLinkedList {
             System.out.println();
         } else {//如果链表一个节点都没有，直接打印[]
             System.out.println("[]");
+        }
+    }
+
+    private class Node {
+        private Object data;
+        private Node next;
+
+        public Node(Object data) {
+            this.data = data;
         }
     }
 

@@ -11,15 +11,6 @@ package com.mozss.algorithms.data_structures.list;
 public class OrderLinkedList {
     private Node head;
 
-    private class Node {
-        private int data;
-        private Node next;
-
-        public Node(int data) {
-            this.data = data;
-        }
-    }
-
     public OrderLinkedList() {
         head = null;
     }
@@ -54,6 +45,15 @@ public class OrderLinkedList {
             current = current.next;
         }
         System.out.println("");
+    }
+
+    private class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data) {
+            this.data = data;
+        }
     }
 
 }

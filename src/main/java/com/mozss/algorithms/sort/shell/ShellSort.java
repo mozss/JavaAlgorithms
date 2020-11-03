@@ -53,7 +53,7 @@ public class ShellSort {
     }
 
     public static void main(String[] args) {
-        int[] array = {4,2,8,9,5,7,6,1,3,10};
+        int[] array = {4, 2, 8, 9, 5, 7, 6, 1, 3, 10};
         shellKnuthSort(array);
     }
 }

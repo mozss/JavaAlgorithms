@@ -8,21 +8,6 @@ public class Graph {
     private StackX theStack;//用栈实现深度优先搜索
     private Queue queue;//用队列实现广度优先搜索
 
-    /**
-     * 顶点类
-     *
-     * @author vae
-     */
-    class Vertex {
-        public char label;
-        public boolean wasVisited;
-
-        public Vertex(char label) {
-            this.label = label;
-            wasVisited = false;
-        }
-    }
-
     public Graph() {
         vertexList = new Vertex[MAX_VERTS];
         adjMat = new int[MAX_VERTS][MAX_VERTS];
@@ -35,6 +20,29 @@ public class Graph {
         }
         theStack = new StackX();
         queue = new Queue();
+    }
+
+    public static void main(String[] args) {
+        Graph graph = new Graph();
+        graph.addVertex('A');
+        graph.addVertex('B');
+        graph.addVertex('C');
+        graph.addVertex('D');
+        graph.addVertex('E');
+
+        graph.addEdge(0, 1);//AB
+        graph.addEdge(1, 2);//BC
+        graph.addEdge(0, 3);//AD
+        graph.addEdge(3, 4);//DE
+
+        System.out.println("深度优先搜索算法 :");
+        graph.depthFirstSearch();//ABCDE
+
+        System.out.println();
+        System.out.println("----------------------");
+
+        System.out.println("广度优先搜索算法 :");
+        graph.breadthFirstSearch();//ABDCE
     }
 
     //将顶点添加到数组中，是否访问标志置为wasVisited=false(未访问)
@@ -123,26 +131,18 @@ public class Graph {
         }
     }
 
-    public static void main(String[] args) {
-        Graph graph = new Graph();
-        graph.addVertex('A');
-        graph.addVertex('B');
-        graph.addVertex('C');
-        graph.addVertex('D');
-        graph.addVertex('E');
+    /**
+     * 顶点类
+     *
+     * @author vae
+     */
+    class Vertex {
+        public char label;
+        public boolean wasVisited;
 
-        graph.addEdge(0, 1);//AB
-        graph.addEdge(1, 2);//BC
-        graph.addEdge(0, 3);//AD
-        graph.addEdge(3, 4);//DE
-
-        System.out.println("深度优先搜索算法 :");
-        graph.depthFirstSearch();//ABCDE
-
-        System.out.println();
-        System.out.println("----------------------");
-
-        System.out.println("广度优先搜索算法 :");
-        graph.breadthFirstSearch();//ABDCE
+        public Vertex(char label) {
+            this.label = label;
+            wasVisited = false;
+        }
     }
 }

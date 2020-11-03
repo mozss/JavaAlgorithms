@@ -10,16 +10,6 @@ public class TwoWayLinkedList {
     private Node tail;//表示链表尾
     private int size;//表示链表的节点个数
 
-    private class Node {
-        private Object data;
-        private Node next;
-        private Node prev;
-
-        public Node(Object data) {
-            this.data = data;
-        }
-    }
-
     public TwoWayLinkedList() {
         size = 0;
         head = null;
@@ -113,6 +103,16 @@ public class TwoWayLinkedList {
             System.out.println("[]");
         }
 
+    }
+
+    private class Node {
+        private Object data;
+        private Node next;
+        private Node prev;
+
+        public Node(Object data) {
+            this.data = data;
+        }
     }
 }
 

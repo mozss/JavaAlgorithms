@@ -24,6 +24,12 @@ public class CombinationProblem {
         selects = new boolean[persons.length];
     }
 
+    public static void main(String[] args) {
+        char[] persons = {'A', 'B', 'C', 'D', 'E'};
+        CombinationProblem cp = new CombinationProblem(persons);
+        cp.showTeams(3);
+    }
+
     public void showTeams(int teamNumber) {
         combination(teamNumber, 0);
     }
@@ -51,12 +57,6 @@ public class CombinationProblem {
         combination(teamNumber - 1, index + 1);
         selects[index] = false;
         combination(teamNumber, index + 1);
-    }
-
-    public static void main(String[] args) {
-        char[] persons = {'A', 'B', 'C', 'D', 'E'};
-        CombinationProblem cp = new CombinationProblem(persons);
-        cp.showTeams(3);
     }
 
 

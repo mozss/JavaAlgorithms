@@ -29,6 +29,13 @@ public class BackpackProblem {
         selects = new boolean[weights.length];
     }
 
+    public static void main(String[] args) {
+        int array[] = {11, 9, 7, 6, 5};
+        int total = 20;
+        BackpackProblem b = new BackpackProblem(array);
+        b.kenapSack(total, 0);
+    }
+
     /*
      * 找出符合承重重量的组合
      * @param
@@ -53,13 +60,6 @@ public class BackpackProblem {
         kenapSack(total - weights[index], index + 1);
         selects[index] = false;
         kenapSack(total, index + 1);
-    }
-
-    public static void main(String[] args) {
-        int array[] = {11, 9, 7, 6, 5};
-        int total = 20;
-        BackpackProblem b = new BackpackProblem(array);
-        b.kenapSack(total, 0);
     }
 
 

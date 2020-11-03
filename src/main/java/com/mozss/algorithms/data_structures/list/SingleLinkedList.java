@@ -15,16 +15,6 @@ public class SingleLinkedList {
         head = null;
     }
 
-    //链表的每个节点类
-    private class Node {
-        private Object data;//每个节点的数据
-        private Node next;//每个节点指向下一个节点的连接
-
-        public Node(Object data) {
-            this.data = data;
-        }
-    }
-
     //在链表头添加元素
     public Object addHead(Object obj) {
         Node newHead = new Node(obj);
@@ -133,5 +123,15 @@ public class SingleLinkedList {
         singleList.display();
         //查找B
         System.out.println(singleList.find("B"));
+    }
+
+    //链表的每个节点类
+    private class Node {
+        private Object data;//每个节点的数据
+        private Node next;//每个节点指向下一个节点的连接
+
+        public Node(Object data) {
+            this.data = data;
+        }
     }
 }
