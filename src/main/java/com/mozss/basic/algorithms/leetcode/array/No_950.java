@@ -44,6 +44,7 @@ import java.util.LinkedList;
 对于所有的 i != j，A[i] != A[j]
 *
 * */
+
 public class No_950 {
 
     /*
@@ -65,6 +66,4 @@ public class No_950 {
         }
         return res;
     }
-
-
 }
