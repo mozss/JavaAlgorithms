@@ -7,7 +7,12 @@ package com.mozss.basic.patterns.behavior.iteratior.balckbox_demo;
 
 public class Client {
     private Iterator it;
-    private Aggregate agg = new ConcreteAggregate();
+    private final Aggregate agg = new ConcreteAggregate();
+
+    public static void main(String[] args) {
+        Client client = new Client();
+        client.operation();
+    }
 
     public void operation() {
         it = agg.createIterator();
@@ -15,10 +20,5 @@ public class Client {
             System.out.println(it.currentItem().toString());
             it.next();
         }
-    }
-
-    public static void main(String[] args) {
-        Client client = new Client();
-        client.operation();
     }
 }

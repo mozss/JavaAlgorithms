@@ -6,7 +6,8 @@ package com.mozss.basic.patterns.behavior.interpreter.simple_demo;
  */
 
 public class Or extends Expression {
-    private Expression left, right;
+    private final Expression left;
+    private final Expression right;
 
     public Or(Expression left, Expression right) {
         this.left = left;

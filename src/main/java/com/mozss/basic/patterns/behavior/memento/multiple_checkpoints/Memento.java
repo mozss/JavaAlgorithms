@@ -11,8 +11,8 @@ import java.util.Vector;
  * 对象持有对同一个Vector对象的引用，也可以同时修改这个Vector对象，会造成系统崩溃。
  * */
 public class Memento {
-    private Vector states;
-    private int index;
+    private final Vector states;
+    private final int index;
 
     /*
      * 构造函数

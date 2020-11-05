@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.structural.bridge.airplane_demo;
  */
 
 abstract public class Airplane {
-    abstract public void fly();
-
     protected AirplaneMaker airplaneMaker;
+
+    abstract public void fly();
 }

@@ -123,8 +123,8 @@ public class Tree234 {
         private static final int ORDER = 4;
         private int numItems;//表示该节点有多少个数据项
         private Node parent;//父节点
-        private Node childArray[] = new Node[ORDER];//存储子节点的数组，最多有4个子节点
-        private DataItem itemArray[] = new DataItem[ORDER - 1];//存放数据项的数组，一个节点最多有三个数据项
+        private final Node[] childArray = new Node[ORDER];//存储子节点的数组，最多有4个子节点
+        private final DataItem[] itemArray = new DataItem[ORDER - 1];//存放数据项的数组，一个节点最多有三个数据项
 
         //连接子节点
         public void connectChild(int childNum, Node child) {
@@ -153,7 +153,7 @@ public class Tree234 {
 
         //判断是否是叶节点
         public boolean isLeaf() {
-            return (childArray[0] == null) ? true : false;
+            return childArray[0] == null;
         }
 
         //得到节点数据项的个数
@@ -168,7 +168,7 @@ public class Tree234 {
 
         //判断节点的数据项是否满了（最多3个）
         public boolean isFull() {
-            return (numItems == ORDER - 1) ? true : false;
+            return numItems == ORDER - 1;
         }
 
         //找到数据项在节点中的位置

@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Context {
 
-    private Map<Variable, Boolean> map = new HashMap<Variable, Boolean>();
+    private final Map<Variable, Boolean> map = new HashMap<Variable, Boolean>();
 
     public void assign(Variable var, boolean value) {
         map.put(var, new Boolean(value));

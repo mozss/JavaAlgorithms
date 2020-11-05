@@ -12,9 +12,9 @@ import java.util.Scanner;
  * 前缀表达式转为后缀表达式
  * */
 public class InfixToSuffix {
-    private MyCharStack s1;//定义运算符栈
-    private MyCharStack s2;//定义存储结果栈
-    private String input;
+    private final MyCharStack s1;//定义运算符栈
+    private final MyCharStack s2;//定义存储结果栈
+    private final String input;
 
     //默认构造方法，参数为输入的中缀表达式
     public InfixToSuffix(String in) {

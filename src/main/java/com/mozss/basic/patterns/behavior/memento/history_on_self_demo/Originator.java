@@ -41,20 +41,20 @@ public class Originator {
      * 内部成员类，备忘录
      * */
     class Memento implements MementoIF {
-        private String state;
-
-        /*
-         * 取值方法
-         * */
-        public String getState() {
-            return state;
-        }
+        private final String state;
 
         /*
          * 构造函数
          * */
         public Memento(Originator o) {
             this.state = o.state;
+        }
+
+        /*
+         * 取值方法
+         * */
+        public String getState() {
+            return state;
         }
     }
 

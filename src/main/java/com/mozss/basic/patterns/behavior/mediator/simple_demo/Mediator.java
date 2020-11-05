@@ -6,11 +6,6 @@ package com.mozss.basic.patterns.behavior.mediator.simple_demo;
  */
 
 abstract public class Mediator {
-    /*
-     * 事件方法，由子类实现
-     * */
-    public abstract void colleagueChanged(Colleague c);
-
     public static void main(String[] args) {
         ConcreteMediator mediator = new ConcreteMediator();
         mediator.createConcreteMediator();
@@ -18,4 +13,9 @@ abstract public class Mediator {
         Colleaguel2 c2 = new Colleaguel2(mediator);
         mediator.colleagueChanged(c1);
     }
+
+    /*
+     * 事件方法，由子类实现
+     * */
+    public abstract void colleagueChanged(Colleague c);
 }

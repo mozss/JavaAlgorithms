@@ -6,8 +6,8 @@ package com.mozss.basic.patterns.behavior.memento.blackbox_demo;
  */
 
 public class Client {
-    private static Originator o = new Originator();
-    private static Caretaker c = new Caretaker();
+    private static final Originator o = new Originator();
+    private static final Caretaker c = new Caretaker();
 
     public static void main(String[] args) {
         //改变负责任对象的状态

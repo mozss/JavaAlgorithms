@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.tv_demo;
  */
 
 public class OnCommand implements Command {
-    private Tv myTV;
+    private final Tv myTV;
 
     /*
      * 构造函数

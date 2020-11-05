@@ -9,7 +9,7 @@ import java.util.Vector;
  */
 
 public class Composite implements Component {
-    private Vector componentVector = new Vector();
+    private final Vector componentVector = new Vector();
 
     /*
      * 返回自己的实例

@@ -98,7 +98,7 @@ public class DoublePointLinkedList {
     }
 
     private class Node {
-        private Object data;
+        private final Object data;
         private Node next;
 
         public Node(Object data) {

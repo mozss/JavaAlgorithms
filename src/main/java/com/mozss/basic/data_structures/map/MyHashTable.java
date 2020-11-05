@@ -11,7 +11,7 @@ public class MyHashTable {
     private DataItem[] hashArray;   //DataItem类，表示每个数据项信息
     private int arraySize;//数组的初始大小
     private int itemNum;//数组实际存储了多少项数据
-    private DataItem nonItem;//用于删除数据项
+    private final DataItem nonItem;//用于删除数据项
 
     public MyHashTable(int arraySize) {
         this.arraySize = arraySize;
@@ -114,7 +114,7 @@ public class MyHashTable {
     }
 
     public static class DataItem {
-        private int iData;
+        private final int iData;
 
         public DataItem(int iData) {
             this.iData = iData;

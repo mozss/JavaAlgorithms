@@ -6,7 +6,8 @@ package com.mozss.basic.patterns.behavior.command.stock_demo;
  */
 
 public class Broker {
-    private Command buyCommand, sellCommand;
+    private final Command buyCommand;
+    private final Command sellCommand;
 
     /*
      * 构造函数

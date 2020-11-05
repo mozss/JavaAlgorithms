@@ -7,28 +7,28 @@ package com.mozss.basic.data_structures.tree.bintree;
 
 public interface Tree {
     //查找节点
-    public Node find(int key);
+    Node find(int key);
 
     //插入新节点
-    public boolean insert(int data);
+    boolean insert(int data);
 
     //中序遍历
-    public void infixOrder(Node current);
+    void infixOrder(Node current);
 
     //前序遍历
-    public void preOrder(Node current);
+    void preOrder(Node current);
 
     //后序遍历
-    public void postOrder(Node current);
+    void postOrder(Node current);
 
     //查找最大值
-    public Node findMax();
+    Node findMax();
 
     //查找最小值
-    public Node findMin();
+    Node findMin();
 
     //删除节点
-    public boolean delete(int key);
+    boolean delete(int key);
 
     //Other Method......
 }

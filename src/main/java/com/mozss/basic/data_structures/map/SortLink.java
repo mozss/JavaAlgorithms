@@ -70,6 +70,6 @@ public class SortLink {
             current.displayLink();
             current = current.next;
         }
-        System.out.println("");
+        System.out.println();
     }
 }

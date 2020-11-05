@@ -41,7 +41,7 @@ public class BucketSort {
     }
 
     public static void main(String[] args) {
-        int a[] = {100, 23, 256, 987, 954, 45, 123, 356, 378,};
+        int[] a = {100, 23, 256, 987, 954, 45, 123, 356, 378,};
         a = BucketSort.bucketSort(a);
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");

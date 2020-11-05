@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.stock_demo;
  */
 
 public class BuyStockCommand implements Command {
-    private StockMarket stock;
+    private final StockMarket stock;
     /*
      * 构造函数
      * */

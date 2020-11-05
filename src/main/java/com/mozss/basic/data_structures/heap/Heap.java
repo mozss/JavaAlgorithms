@@ -10,8 +10,8 @@ package com.mozss.basic.data_structures.heap;
  * */
 public class Heap {
 
-    private Node[] heapArray;
-    private int maxSize;
+    private final Node[] heapArray;
+    private final int maxSize;
     private int currentSize;
 
     public Heap(int mx) {
@@ -21,11 +21,11 @@ public class Heap {
     }
 
     public boolean isEmpty() {
-        return (currentSize == 0) ? true : false;
+        return currentSize == 0;
     }
 
     public boolean isFull() {
-        return (currentSize == maxSize) ? true : false;
+        return currentSize == maxSize;
     }
 
     public boolean insert(int key) {

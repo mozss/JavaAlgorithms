@@ -22,6 +22,15 @@ public class Reminder {
     }
 
     /*
+     * main方法
+     * */
+    public static void main(String[] args) {
+        System.out.println("About to schedule task");
+        new Reminder(5);
+        System.out.println("Task scheduled");
+    }
+
+    /*
      * 内部成员类，描述将要执行的任务
      * */
     class ReminderTask extends TimerTask {
@@ -31,15 +40,6 @@ public class Reminder {
             //Terminate the timer thread
             timer.cancel();
         }
-    }
-
-    /*
-     * main方法
-     * */
-    public static void main(String[] args) {
-        System.out.println("About to schedule task");
-        new Reminder(5);
-        System.out.println("Task scheduled");
     }
 
     /*

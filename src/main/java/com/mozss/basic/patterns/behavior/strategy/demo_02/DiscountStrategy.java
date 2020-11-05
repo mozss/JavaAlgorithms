@@ -13,16 +13,16 @@ abstract public class DiscountStrategy {
     private int copies = 0;
 
     /*
-     * 策略方法
-     * */
-    public abstract double calculateDiscount();
-
-    /*
      * 构造函数
      * */
     public DiscountStrategy() {
         this.price = price;
         this.copies = copies;
     }
+
+    /*
+     * 策略方法
+     * */
+    public abstract double calculateDiscount();
 
 }

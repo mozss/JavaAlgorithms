@@ -9,7 +9,7 @@ package com.mozss.basic.data_structures.graph;
  * */
 public class Queue {
     private final int SIZE = 20;
-    private int[] queArray;
+    private final int[] queArray;
     private int front;
     private int rear;
 

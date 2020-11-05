@@ -23,11 +23,11 @@ public class Grape implements Fruit {
         System.out.println("Grape has been planted");
     }
 
-    public void setSeedles(boolean seedles) {
-        this.seedles = seedles;
-    }
-
     public boolean isSeedles() {
         return seedles;
+    }
+
+    public void setSeedles(boolean seedles) {
+        this.seedles = seedles;
     }
 }

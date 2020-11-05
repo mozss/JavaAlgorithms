@@ -3,15 +3,15 @@
 leetcode的题目较多，记录了其中200多道题。
 ###数组（array）
 
-###二分查找（binary_search）
+###二分查找（binary）
 
-###字节码操作（bit_operation）
+###字节码操作（bit）
 
-###深度优先遍历（depth_first）
+###深度优先遍历（depthfirst）
 
-###动态规划（dynamic_planning）
+###动态规划（dynamicplanning）
 
-###贪心算法（greedy_algorithm）
+###贪心算法（greedy）
 
 ###散列表（hashmap）
 

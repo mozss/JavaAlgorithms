@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.simple_demo;
  */
 
 public class ConcreteCommand implements Command {
-    private Receiver receiver;
+    private final Receiver receiver;
 
     /*
      * 构造函数

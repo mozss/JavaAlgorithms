@@ -9,7 +9,7 @@ public class Leaf implements Component {
     /**
      * 叶子对象的名字
      */
-    private String name;
+    private final String name;
 
     /**
      * 构造方法，传入叶子对象的名称

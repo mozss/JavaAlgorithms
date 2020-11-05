@@ -9,8 +9,8 @@ package com.mozss.basic.patterns.behavior.memento.multiple_checkpoints;
  * 到相应的检查点对应的状态上。
  * */
 public class Client {
-    private static Originator o = new Originator();
-    private static Caretaker c = new Caretaker(o);
+    private static final Originator o = new Originator();
+    private static final Caretaker c = new Caretaker(o);
 
     public static void main(String[] args) {
         //改变状态

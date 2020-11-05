@@ -9,7 +9,7 @@ package com.mozss.basic.patterns.behavior.command.audioplayer_demo;
  * */
 public class Julia {
     private static Keypad keypad;
-    private static AudioPlayer myAudio = new AudioPlayer();
+    private static final AudioPlayer myAudio = new AudioPlayer();
 
     public static void main(String[] args) {
         test1();

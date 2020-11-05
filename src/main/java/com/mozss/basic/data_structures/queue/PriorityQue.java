@@ -12,8 +12,8 @@ package com.mozss.basic.data_structures.queue;
  * 优先级队列的插入操作需要 O(N)的时间，而删除操作则需要O(1) 的时间，后面会讲解如何通过 堆 来改进插入时间。
  * */
 public class PriorityQue {
-    private int maxSize;
-    private int[] priQueArray;
+    private final int maxSize;
+    private final int[] priQueArray;
     private int nItems;
 
     public PriorityQue(int s) {

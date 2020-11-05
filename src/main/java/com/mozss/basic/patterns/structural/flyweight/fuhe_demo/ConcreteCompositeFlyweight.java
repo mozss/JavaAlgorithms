@@ -10,7 +10,7 @@ import java.util.Map;
  */
 
 public class ConcreteCompositeFlyweight extends Flyweight {
-    private HashMap flies = new HashMap(10);
+    private final HashMap flies = new HashMap(10);
     private Flyweight flyweight;
     /*
      * 默认构造函数

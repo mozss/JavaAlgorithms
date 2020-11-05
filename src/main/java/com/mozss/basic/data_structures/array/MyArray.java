@@ -2,11 +2,11 @@ package com.mozss.basic.data_structures.array;
 
 public class MyArray {
     //定义一个数组
-    private int[] intArray;
+    private final int[] intArray;
     //定义数组的实际有效长度
     private int elems;
     //定义数组的最大长度
-    private int length;
+    private final int length;
 
     //默认构造一个长度为50的数组
     public MyArray() {

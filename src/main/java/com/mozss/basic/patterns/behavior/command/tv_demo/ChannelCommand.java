@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.tv_demo;
  */
 
 public class ChannelCommand implements Command {
-    private Tv myTv;
+    private final Tv myTv;
     private int channel;
 
     public ChannelCommand(Tv tv, int channel) {

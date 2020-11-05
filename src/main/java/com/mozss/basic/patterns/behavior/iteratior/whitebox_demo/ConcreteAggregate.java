@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.iteratior.whitebox_demo;
  */
 
 public class ConcreteAggregate extends Aggregate {
-    private Object[] obj = {"Monk Tang", "Monkey", "Pigsy", "Sandy", "Horse"};
+    private final Object[] obj = {"Monk Tang", "Monkey", "Pigsy", "Sandy", "Horse"};
 
     /*
      * 工厂方法：返回一个迭代子对象

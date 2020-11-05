@@ -52,7 +52,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int n[] = {2, 12, 24, 35, 56, 67, 78, 34, 46};
+        int[] n = {2, 12, 24, 35, 56, 67, 78, 34, 46};
         int m = 24;
 //        System.out.println(BinarySearchByCycle(n,m));
         System.out.println(BinarySearchByRecurisive(n, m, 0, 9));

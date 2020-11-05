@@ -2,11 +2,11 @@ package com.mozss.basic.data_structures.graph;
 
 public class Graph {
     private final int MAX_VERTS = 20;//表示顶点的个数
-    private Vertex vertexList[];//用来存储顶点的数组
-    private int adjMat[][];//用邻接矩阵来存储 边,数组元素0表示没有边界，1表示有边界
+    private final Vertex[] vertexList;//用来存储顶点的数组
+    private final int[][] adjMat;//用邻接矩阵来存储 边,数组元素0表示没有边界，1表示有边界
     private int nVerts;//顶点个数
-    private StackX theStack;//用栈实现深度优先搜索
-    private Queue queue;//用队列实现广度优先搜索
+    private final StackX theStack;//用栈实现深度优先搜索
+    private final Queue queue;//用队列实现广度优先搜索
 
     public Graph() {
         vertexList = new Vertex[MAX_VERTS];

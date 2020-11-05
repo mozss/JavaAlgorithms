@@ -10,8 +10,8 @@ import java.util.Vector;
  * 负责人角色可以根据检查点指数index来恢复发起人角色的状态，也可以根据检查点指数index来取消一个检查点。
  * */
 public class Caretaker {
-    private Originator o;
-    private Vector mementos = new Vector();
+    private final Originator o;
+    private final Vector mementos = new Vector();
     private int current;
 
     /*

@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.tv_demo;
  */
 
 public class OffCommand implements Command {
-    private Tv myTv;
+    private final Tv myTv;
 
     public OffCommand(Tv tv) {
         myTv = tv;

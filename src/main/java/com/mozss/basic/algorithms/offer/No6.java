@@ -12,7 +12,7 @@ public class No6 {
      * 需要定义节点，值，指针
      * */
 
-    public static void main(String Args[]) {
+    public static void main(String[] Args) {
         ListNode l1 = new ListNode(1);
         ListNode l2 = new ListNode(2);
         ListNode l3 = new ListNode(3);

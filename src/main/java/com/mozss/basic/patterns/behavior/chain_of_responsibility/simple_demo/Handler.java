@@ -13,14 +13,14 @@ public abstract class Handler {
 
     public abstract void handleRequest();
 
+    public Handler getSuccessor() {
+        return successor;
+    }
+
     /*
      * 赋值和取值方法
      * */
     public void setSuccessor(Handler successor) {
         this.successor = successor;
-    }
-
-    public Handler getSuccessor() {
-        return successor;
     }
 }

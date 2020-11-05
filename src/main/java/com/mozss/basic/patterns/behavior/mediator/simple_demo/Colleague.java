@@ -5,7 +5,7 @@ package com.mozss.basic.patterns.behavior.mediator.simple_demo;
  * @create 2019-10-28 18:53
  */
 public abstract class Colleague {
-    private Mediator mediator;
+    private final Mediator mediator;
 
     /*
      * 构造函数，作为参量接收调停者对象

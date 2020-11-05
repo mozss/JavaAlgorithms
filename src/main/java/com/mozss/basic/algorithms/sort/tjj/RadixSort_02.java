@@ -81,7 +81,7 @@ public class RadixSort_02 {
 
     public static void main(String[] args) {
         int i;
-        int a[] = {53, 3, 542, 748, 14, 214, 154, 63, 616};
+        int[] a = {53, 3, 542, 748, 14, 214, 154, 63, 616};
 
         System.out.printf("before sort:");
         for (i = 0; i < a.length; i++)

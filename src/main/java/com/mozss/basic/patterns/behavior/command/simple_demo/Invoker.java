@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.simple_demo;
  */
 
 public class Invoker {
-    private Command command;
+    private final Command command;
 
     /*
      * 构造函数

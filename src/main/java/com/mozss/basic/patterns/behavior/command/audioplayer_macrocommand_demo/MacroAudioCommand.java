@@ -8,7 +8,7 @@ import java.util.Vector;
  */
 
 public class MacroAudioCommand implements MacroCommand {
-    private Vector commandList = new Vector();
+    private final Vector commandList = new Vector();
 
     /*
      * 宏命令聚集的管理方法

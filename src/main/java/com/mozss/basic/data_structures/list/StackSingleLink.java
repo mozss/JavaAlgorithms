@@ -10,7 +10,7 @@ package com.mozss.basic.data_structures.list;
  *栈的pop()方法和push()方法，对应于链表的在头部删除元素deleteHead()以及在头部增加元素addHead()
  * */
 public class StackSingleLink {
-    private SingleLinkedList link;
+    private final SingleLinkedList link;
 
     public StackSingleLink() {
         link = new SingleLinkedList();

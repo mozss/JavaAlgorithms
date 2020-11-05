@@ -8,8 +8,8 @@ package com.mozss.basic.data_structures.stack;
  * */
 
 public class MyStack {
-    private int[] array;
-    private int maxSize;
+    private final int[] array;
+    private final int maxSize;
     private int top;
 
     public MyStack(int size) {

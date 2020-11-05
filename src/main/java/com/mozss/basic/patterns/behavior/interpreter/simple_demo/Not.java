@@ -7,7 +7,7 @@ package com.mozss.basic.patterns.behavior.interpreter.simple_demo;
 
 public class Not extends Expression {
 
-    private Expression exp;
+    private final Expression exp;
 
     public Not(Expression exp) {
         this.exp = exp;

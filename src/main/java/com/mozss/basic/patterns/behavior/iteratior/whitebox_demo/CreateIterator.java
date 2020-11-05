@@ -7,7 +7,7 @@ package com.mozss.basic.patterns.behavior.iteratior.whitebox_demo;
 
 public class CreateIterator implements Iterator {
 
-    private ConcreteAggregate agg;
+    private final ConcreteAggregate agg;
     private int index = 0;
     private int size = 0;
 

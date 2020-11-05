@@ -15,9 +15,9 @@ package com.mozss.basic.algorithms.theory.recursive;
  * */
 public class CombinationProblem {
     //组中所有可以供选择的人员
-    private char[] persons;
+    private final char[] persons;
     //标记成员是否被选中，选中为true
-    private boolean[] selects;
+    private final boolean[] selects;
 
     public CombinationProblem(char[] persons) {
         this.persons = persons;

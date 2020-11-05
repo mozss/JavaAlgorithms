@@ -11,8 +11,8 @@ import java.util.TimerTask;
  *贾母-》贾赦-》贾政-》贾宝玉-》贾环
  * */
 public class DrumBeater {
-    private static Player firstPlayer;
     public static boolean stopped = false;
+    private static Player firstPlayer;
     Timer timer;
 
     /*

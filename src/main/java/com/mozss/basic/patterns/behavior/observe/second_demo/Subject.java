@@ -10,7 +10,7 @@ import java.util.Vector;
 
 abstract public class Subject {
     //这个聚集保存了所有对观察者对象的引用
-    private Vector observersVector = new Vector();
+    private final Vector observersVector = new Vector();
 
     /*
      * 调用这个方法登记一个新的观察者对象

@@ -6,7 +6,9 @@ package com.mozss.basic.patterns.behavior.command.tv_demo;
  */
 
 public class Control {
-    private Command onCommand, offCommand, changeChannel;
+    private final Command onCommand;
+    private final Command offCommand;
+    private final Command changeChannel;
 
     /*
      * 构造函数

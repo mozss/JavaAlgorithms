@@ -58,15 +58,15 @@ public class Originator {
             this.savedState = savedState;
         }
 
+        public String getState() {
+            return savedState;
+        }
+
         /*
          * 取值和赋值方法
          * */
         public void setState(String savedState) {
             this.savedState = savedState;
-        }
-
-        public String getState() {
-            return savedState;
         }
     }
 }

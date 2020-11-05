@@ -8,9 +8,9 @@ package com.mozss.basic.data_structures.queue;
  * Java模式单向队列实现
  * */
 public class MyQueue {
-    private Object[] queArray;
+    private final Object[] queArray;
     //队列总大小
-    private int maxSize;
+    private final int maxSize;
     //前端
     private int front;
     //后端

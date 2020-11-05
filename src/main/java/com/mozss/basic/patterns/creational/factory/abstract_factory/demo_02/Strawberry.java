@@ -13,6 +13,13 @@ public class Strawberry implements Fruit {
      * */
     private boolean seedless;
 
+    /*
+     * 辅助方法
+     * */
+    public static void log(String msg) {
+        System.out.println(msg);
+    }
+
     @Override
     public void grow() {
         System.out.println("正在生长");
@@ -28,14 +35,14 @@ public class Strawberry implements Fruit {
         System.out.println("已经种植");
     }
 
-    /*
-     * 辅助方法
-     * */
-    public static void log(String msg) {
-        System.out.println(msg);
+    public boolean isSeedless() {
+        return seedless;
     }
 
-    public boolean isSeedless() {
+    /*
+     * 有无籽的取值方法
+     * */
+    public boolean getSeedless() {
         return seedless;
     }
 
@@ -44,13 +51,6 @@ public class Strawberry implements Fruit {
      * */
     public void setSeedless(boolean seedless) {
         this.seedless = seedless;
-    }
-
-    /*
-     * 有无籽的取值方法
-     * */
-    public boolean getSeedless() {
-        return seedless;
     }
 
 

@@ -10,7 +10,7 @@ package com.mozss.basic.data_structures.list;
  * */
 public class QueueLinkedList {
 
-    private DoublePointLinkedList dp;
+    private final DoublePointLinkedList dp;
 
     public QueueLinkedList() {
         dp = new DoublePointLinkedList();

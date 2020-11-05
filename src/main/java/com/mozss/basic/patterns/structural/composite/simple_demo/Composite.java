@@ -12,11 +12,11 @@ public class Composite implements Component {
     /**
      * 用来存储组合对象中包含的子组件对象
      */
-    private List<Component> childComponents = new ArrayList<Component>();
+    private final List<Component> childComponents = new ArrayList<Component>();
     /**
      * 组合对象的名字
      */
-    private String name;
+    private final String name;
 
     /**
      * 构造方法，传入组合对象的名字

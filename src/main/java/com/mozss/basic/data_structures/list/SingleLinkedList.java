@@ -127,7 +127,7 @@ public class SingleLinkedList {
 
     //链表的每个节点类
     private class Node {
-        private Object data;//每个节点的数据
+        private final Object data;//每个节点的数据
         private Node next;//每个节点指向下一个节点的连接
 
         public Node(Object data) {

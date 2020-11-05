@@ -7,7 +7,7 @@ import java.util.Map;
  * 重建二叉树
  * */
 public class No7 {
-    private Map<Integer, Integer> indexForInOrders = new HashMap<>();
+    private final Map<Integer, Integer> indexForInOrders = new HashMap<>();
 
     /*
      * 缓存中遍历数组每个值对应的索引

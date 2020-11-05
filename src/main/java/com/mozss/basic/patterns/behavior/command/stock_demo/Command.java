@@ -6,5 +6,5 @@ package com.mozss.basic.patterns.behavior.command.stock_demo;
  */
 
 public interface Command {
-    public abstract void execute();
+    void execute();
 }

@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.behavior.command.audioplayer_macrocommand_demo;
  */
 
 public class StopCommand implements Command {
-    private AudioPlayer myAudio;
+    private final AudioPlayer myAudio;
 
     /*
      * 构造函数

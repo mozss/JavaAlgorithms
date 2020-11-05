@@ -6,16 +6,16 @@ package com.mozss.basic.patterns.behavior.chain_of_responsibility.jiguchuanhua_t
  */
 
 abstract class Player {
-    abstract public void handle();
-
     private Player successor;
-    /*
-     * 默认构造函数
-     * */
 
     public Player() {
         successor = null;
     }
+    /*
+     * 默认构造函数
+     * */
+
+    abstract public void handle();
 
     /*
      * 赋值方法，调用此方法设定下家

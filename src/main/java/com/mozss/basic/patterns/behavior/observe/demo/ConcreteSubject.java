@@ -9,7 +9,7 @@ import java.util.Vector;
  */
 
 public class ConcreteSubject implements Subject {
-    private Vector observersVector = new Vector();
+    private final Vector observersVector = new Vector();
 
     /*
      * 调用这个方法登记一个新的观察者对象

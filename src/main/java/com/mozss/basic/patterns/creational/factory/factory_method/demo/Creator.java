@@ -9,5 +9,5 @@ public interface Creator {
     /*
      * 工厂方法
      * */
-    public Product factory();
+    Product factory();
 }

@@ -8,8 +8,8 @@ package com.mozss.basic.patterns.behavior.memento.whitebox_demo;
  * 示意性客户端实现代码
  * */
 public class Client {
-    private static Originator o = new Originator();
-    private static Caretaker c = new Caretaker();
+    private static final Originator o = new Originator();
+    private static final Caretaker c = new Caretaker();
 
     /*
      * 由于负责人角色示意实现，故下方代码只是示意性

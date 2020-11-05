@@ -10,7 +10,7 @@ import java.util.Map;
  */
 
 public class FlyweightFactory {
-    private HashMap files = new HashMap();
+    private final HashMap files = new HashMap();
     private Flyweight InkFlyweight;
 
     /*

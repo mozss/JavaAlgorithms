@@ -7,7 +7,7 @@ package com.mozss.basic.patterns.behavior.interpreter.simple_demo;
 
 public class Variable extends Expression {
 
-    private String name;
+    private final String name;
 
     public Variable(String name) {
         this.name = name;

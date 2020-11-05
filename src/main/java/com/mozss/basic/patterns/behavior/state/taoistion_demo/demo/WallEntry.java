@@ -8,12 +8,12 @@ package com.mozss.basic.patterns.behavior.state.taoistion_demo.demo;
 public class WallEntry {
     private WallStateIF state;
 
-    public void setState(WallStateIF state) {
-        this.state = state;
-    }
-
     public WallStateIF getState() {
         return state;
+    }
+
+    public void setState(WallStateIF state) {
+        this.state = state;
     }
 
     public void pass() throws WallEntryException {

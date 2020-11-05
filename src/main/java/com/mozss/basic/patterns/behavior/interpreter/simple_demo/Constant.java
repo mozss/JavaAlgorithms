@@ -7,7 +7,7 @@ package com.mozss.basic.patterns.behavior.interpreter.simple_demo;
 
 public class Constant extends Expression {
 
-    private boolean value;
+    private final boolean value;
 
     public Constant(boolean value) {
         this.value = value;

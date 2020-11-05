@@ -106,7 +106,7 @@ public class TwoWayLinkedList {
     }
 
     private class Node {
-        private Object data;
+        private final Object data;
         private Node next;
         private Node prev;
 

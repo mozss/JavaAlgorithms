@@ -8,9 +8,9 @@ package com.mozss.basic.patterns.behavior.command.audioplayer_demo;
  * Invoker角色，接收者角色
  * */
 public class Keypad {
-    private Command playCmd;
-    private Command rewindCmd;
-    private Command stopCmd;
+    private final Command playCmd;
+    private final Command rewindCmd;
+    private final Command stopCmd;
     /*
      * 构造函数
      * */

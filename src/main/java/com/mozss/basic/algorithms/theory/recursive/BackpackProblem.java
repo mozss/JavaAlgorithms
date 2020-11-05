@@ -20,9 +20,9 @@ package com.mozss.basic.algorithms.theory.recursive;
  * */
 public class BackpackProblem {
     //可供选择的重量
-    private int[] weights;
+    private final int[] weights;
     //记录是否被选中
-    private boolean[] selects;
+    private final boolean[] selects;
 
     public BackpackProblem(int[] weights) {
         this.weights = weights;
@@ -30,7 +30,7 @@ public class BackpackProblem {
     }
 
     public static void main(String[] args) {
-        int array[] = {11, 9, 7, 6, 5};
+        int[] array = {11, 9, 7, 6, 5};
         int total = 20;
         BackpackProblem b = new BackpackProblem(array);
         b.kenapSack(total, 0);

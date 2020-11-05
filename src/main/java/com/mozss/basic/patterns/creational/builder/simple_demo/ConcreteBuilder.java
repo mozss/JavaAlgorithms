@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.creational.builder.simple_demo;
  */
 
 public class ConcreteBuilder extends Builder {
-    private Product product = new Product();
+    private final Product product = new Product();
 
     @Override
     public void buildPart1() {

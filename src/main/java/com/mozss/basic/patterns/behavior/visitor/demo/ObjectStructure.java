@@ -9,7 +9,7 @@ import java.util.Vector;
  */
 
 public class ObjectStructure {
-    private Vector nodes;
+    private final Vector nodes;
     private Node node;
 
     /*

@@ -9,7 +9,7 @@ package com.mozss.basic.data_structures.graph;
  * */
 public class StackX {
     private final int SIZE = 20;
-    private int[] st;
+    private final int[] st;
     private int top;
 
     public StackX() {

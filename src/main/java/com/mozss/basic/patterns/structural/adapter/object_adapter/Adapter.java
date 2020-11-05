@@ -6,7 +6,7 @@ package com.mozss.basic.patterns.structural.adapter.object_adapter;
  */
 
 public class Adapter implements Target {
-    private Adaptee adaptee;
+    private final Adaptee adaptee;
 
     public Adapter(Adaptee adaptee) {
         super();

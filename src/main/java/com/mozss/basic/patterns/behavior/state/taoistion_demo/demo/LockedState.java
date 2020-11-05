@@ -8,7 +8,7 @@ import java.util.Date;
  */
 
 public class LockedState implements WallStateIF {
-    private static String rightSpell = "天机不可泄露";
+    private static final String rightSpell = "天机不可泄露";
     private Date timeOfLock;
 
     public LockedState() {
@@ -17,7 +17,7 @@ public class LockedState implements WallStateIF {
 
     @Override
     public void spell(WallEntry wall, String spell) throws WallEntryException {
-        if (spell.equals(this.rightSpell)) {
+        if (spell.equals(rightSpell)) {
             wall.setState(new UnlockedState());
         } else {
             throw new WallEntryException("错误的口诀（spell）！！！");

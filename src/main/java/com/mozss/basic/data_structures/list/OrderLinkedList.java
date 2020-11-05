@@ -44,11 +44,11 @@ public class OrderLinkedList {
             System.out.print(current.data + " ");
             current = current.next;
         }
-        System.out.println("");
+        System.out.println();
     }
 
     private class Node {
-        private int data;
+        private final int data;
         private Node next;
 
         public Node(int data) {

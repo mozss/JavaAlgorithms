@@ -8,8 +8,8 @@ package com.mozss.basic.data_structures.expression;
  * 定义一个栈
  * */
 public class MyCharStack {
-    private char[] array;
-    private int maxSize;
+    private final char[] array;
+    private final int maxSize;
     private int top;
 
     public MyCharStack(int size) {
@@ -47,7 +47,7 @@ public class MyCharStack {
             System.out.print(peekN(i));
             System.out.print(' ');
         }
-        System.out.println("");
+        System.out.println();
     }
 
     //判断栈是否为空
