@@ -38,7 +38,6 @@ public class MergeSort {
         return c;
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////
 
     public static int[] mergeSort(int[] c, int start, int last) {
         if (last > start) {
@@ -50,6 +49,7 @@ public class MergeSort {
         }
         return c;
     }
+    
 
     public static void merge(int[] c, int start, int mid, int last) {
         int[] temp = new int[last - start + 1];//定义临时数组

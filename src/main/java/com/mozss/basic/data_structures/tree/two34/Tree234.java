@@ -1,4 +1,4 @@
-package com.mozss.basic.data_structures.tree.two_3_4;
+package com.mozss.basic.data_structures.tree.two34;
 
 /**
  * @author mozss

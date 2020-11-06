@@ -2,7 +2,7 @@ package com.mozss.basic.algorithms.sort.kgd;
 
 import java.util.Arrays;
 
-public class Heapsort_1 {
+public class HeapSort01 {
 
     public static void main(String[] argr) {
         int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1};
@@ -21,13 +21,7 @@ public class Heapsort_1 {
         }
     }
 
-    /**
-     * 调整大顶堆（仅是调整的过程，建立在大顶堆已构建的基础上）
-     *
-     * @param arr
-     * @param i
-     * @param lenght
-     */
+
     private static void adjustHeap(int[] arr, int i, int lenght) {
         //先取出当前元素i
         int temp = arr[i];
