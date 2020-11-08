@@ -1,7 +1,10 @@
 package com.mozss.basic.algorithms.sort.kgd;
 
 import java.util.Arrays;
-
+/**
+ * @author: mozss
+ * @date: 2020/11/7 18:25
+ **/
 public class HeapSort01 {
 
     public static void main(String[] argr) {
@@ -16,8 +19,10 @@ public class HeapSort01 {
             adjustHeap(arr, i, arr.length);
         }
         for (int j = arr.length; j > 0; j--) {
-            swap(arr, 0, j);//将堆顶元素与末尾元素进行交换
-            adjustHeap(arr, 0, j);//重新对堆进行调整
+            //将堆顶元素与末尾元素进行交换
+            swap(arr, 0, j);
+            //重新对堆进行调整
+            adjustHeap(arr, 0, j);
         }
     }
 
@@ -50,6 +55,4 @@ public class HeapSort01 {
         arr[a] = arr[a];
         arr[b] = temp;
     }
-
-
 }

@@ -6,12 +6,12 @@ package com.mozss.basic.algorithms.leetcode.hashmap;
  */
 
 public class No811 {
-	/**
+	/*
 	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	 * @题目名称:   811.子域名访问计数
-	 * @知识考察:
+	 * 题目名称:   811.子域名访问计数
+	 * 知识考察:
 	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	 * @题目描述:   一个网站域名,比如"discuss.leetcode.com"包含多个子域名,作为顶级域名,常用的
+	 * 题目描述:   一个网站域名,比如"discuss.leetcode.com"包含多个子域名,作为顶级域名,常用的
 	 *             有"com",下一级则有"leetcode.com",最低的一级为"discuss.leetcode.com",
 	 *             当我们访问域名为"discuss.leetcode.com"时,也同时访问了父级域名"leetcode.com"
 	 *             和"com"
@@ -28,19 +28,19 @@ public class No811 {
 	 *                  4.输入中任何一个域名的访问次数到小于1000
 	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 	 * eg 1>:
-	 * @输入Input:    ["9001" discuss.leetcode.com"]
-	 * @输出Output:   ["9001 discuss.leetcode.com","9001 leetcode.com","9001 com"]
-	 * @说明:     例子中仅包含一个域名,"discuss.leetcod.com",按照前文的假设,子域名"leetcode.com"
+	 * 输入Input:    ["9001" discuss.leetcode.com"]
+	 * 输出Output:   ["9001 discuss.leetcode.com","9001 leetcode.com","9001 com"]
+	 * 说明:     例子中仅包含一个域名,"discuss.leetcod.com",按照前文的假设,子域名"leetcode.com"
 	 *            和"com"都会被访问,所以它们的访问次数都是9001次.
 	 *
 	 * eg 2>:
-	 * @输入Input:    ["900 google.mail.com","50 yahoo.com","1 intel.mail.com","5,wiki.org"}
-	 * @输出Output:   ["901 mail.com","50 yahoo.com","900 google.mail.com","5 wiki.org",
+	 * 输入Input:    ["900 google.mail.com","50 yahoo.com","1 intel.mail.com","5,wiki.org"}
+	 * 输出Output:   ["901 mail.com","50 yahoo.com","900 google.mail.com","5 wiki.org",
 	 *                 "5 org","1 interl.mail.com","951 com"]
-	 * @说明:
+	 * 说明:
 	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	 * @解题思路:
-	 * @题目总结:
+	 * 解题思路:
+	 * 题目总结:
 	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	 **/
+	 */
 }
